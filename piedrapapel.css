@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: #848691;
+}
+
+.selector-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: rgb(31, 32, 32);
+    flex-wrap: wrap;
+}
+
+.logo{
+    height: 70px;
+    cursor: pointer;
+
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 0.75rem;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+.text{
+    margin: 30px;
+    background-color: rgb(31, 32, 32);
+}
+
+.section{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: rgb(31, 32, 32);
+    padding-bottom: 30px;
+}
+
+#resultShower1{
+    background-color: rgb(85, 97, 97);
+    margin-top: 25px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #edf0f1;
+    background-color: rgb(31, 32, 32);
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+li, a, button {
+    color: #edf0f1;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+
+.jugar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 32, 32);
+    margin-top: 30px;
+}
+
+.area-juego{
+    width: 100%;
+    background-color: rgb(47, 51, 51);
+    display: flex;
+    margin-top: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.maquina-container{
+    width: 50%;
+    display: flex;
+    background-color: rgb(129, 39, 58);
+    justify-content: center;
+    height: 17rem;
+    align-items: center;
+}
+
+.selector-area{
+    padding: 1.5rem;
+    background-color: rgb(31, 32, 32);
+}
+
+.imagenes-container{
+    width: 50%;
+    background-color: rgb(52, 121, 121);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#button-jugar{
+    padding: 9px 25px;
+    background-color: rgb(44, 104, 119);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .selector-container{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(31, 32, 32);
+        flex-wrap: wrap;}
+    .section{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        background-color: rgb(31, 32, 32);
+        padding-bottom: 30px;
+    }
+    header{
+        padding: 0%;
+    }
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 0.25rem;
+    }
+    
+}    

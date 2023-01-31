@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>piedra papel o tijera</title>
+    <link rel="stylesheet" href="piedrapapel.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">hola</a></li>
+                <li><a href="#">platzi</a></li>
+                <li><a href="#">master</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="cta"><button>contact</button></a>
+    </header>
+    <section class="section">
+        <div class="selector-container">
+            <input type="image" src="./piedra.png" id="piedra1" alt="piedra" style="width: 8rem; height: 8rem; background-color: rgb(31, 32, 32);">
+            <input type="image" src="./papel.png" id="papel1" alt="papel" style="width: 8rem; height: 8rem; background-color: rgb(31, 32, 32);">
+            <input type="image" src="./tijera.png" id="tijera1" alt="tijera" style="width:8rem; height: 8rem; background-color: rgb(31, 32, 32);">
+        </div>
+        <div class="text">
+            <h2>bienvenid@ al juego de piedra, papel o tijera, aqui competiras
+                contra una maquina para ganar creditos que podras recaudar en
+                objetos para tu avatar, pero no todo es color de rosas, si pierdes,
+                perderas creditos tambien...
+                <br>
+                <br>
+                tienes que derrotar a la IA que domina el pueblo de tenecia, cuyos 
+                habitantes aterrorizados viven bajo el regimen de una malvada 
+                IA que quiere extraer todos los recursos del pueblo y 
+                esclavizar esta nacion. Es hora de luchar por la libertad. 
+            </h2>
+        </div>
+        <section class="selector-area">
+            <section class="area-juego">
+                <div class="imagenes-container">
+                    <input type="image" src="./piedra.png" id="piedra" alt="piedra" onclick="getPlayerChoicerock();" style="width: 8rem; height: 8rem; background-color: rgb(52, 121, 121);">
+                    <input type="image" src="./papel.png" id="papel" alt="papel" onclick="getPlayerChoicepaper();" style="width: 8rem; height: 8rem; background-color: rgb(52, 121, 121);">
+                    <input type="image" src="./tijera.png" id="tijera" alt="tijera" onclick="getPlayerChoicescisor();" style="width:8rem; height: 8rem; background-color: rgb(52, 121, 121);">
+                </div>
+                <div class="maquina-container">
+                    <input type="image" src="./ia.jpg" id="ia" alt="ia" style="width:16rem; height: 13rem; background-color: rgb(31, 32, 32);">
+                </div>
+                <div id="resultShower1">
+                    <h2 id="resultShower"></h2>
+                </div>
+            </section>
+            <div class="jugar">
+                <button id="button-jugar" onclick="jugar();">jugar</button>
+            </div>
+        </section>
+    </section>
+
+</body>
+<script src="piedrapapel.js"></script>
+</html>
